@@ -1,3 +1,4 @@
+import Highlight from '@components/Highlight'
 import React from 'react'
 
 const About = () => {
@@ -15,24 +16,13 @@ const About = () => {
 
         <ul className="list-disc list-outside pl-6">
           <li className="pb-2">
-            A series of essays,{' '}
-            <span className="relative w-fit group">
-              <span className="bg-bg1 border-1 border-bg2 text-primary group-hover:bg-bg2 transition py-1 rounded-lg cursor-pointer duration-100">
-                <a href="" className="font-medium italic">
-                  On the Problem of Pride
-                </a>
-              </span>
-            </span>
-            , in which I outline the problem of understanding and argue for the
+            A series of essays, <Highlight text={'On the Problem of Pride'} />,
+            in which I outline the problem of understanding and argue for the
             world as will and representation.
           </li>
           <li>
-            <span className="bg-bg1 text-primary hover:bg-bg2 transition p-1 rounded-lg cursor-pointer duration-100">
-              <a href="https://github.com/jinh0/atp">
-                An automated theorem prover
-              </a>
-            </span>
-            written in OCaml and TypeScript.
+            <Highlight text={'An automated theorem prover'} /> written in OCaml
+            and TypeScript.
           </li>
         </ul>
       </div>
