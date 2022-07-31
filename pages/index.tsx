@@ -29,6 +29,7 @@ const Home: NextPage = () => {
                   <p className="pb-4">
                     Hi, I&apos;m an undergraduate student interested in
                     <span className="font-medium">
+                      {' '}
                       the problem of representation.
                     </span>
                   </p>
@@ -39,17 +40,13 @@ const Home: NextPage = () => {
 
                   <ul className="list-disc list-outside pl-6">
                     <li className="pb-2">
-                      A series of essays,
+                      A series of essays,{' '}
                       <span className="relative w-fit group">
-                        <span className="bg-bg1 border-1 border-bg2 text-primary group-hover:bg-bg2 transition p-1 rounded-lg cursor-pointer duration-100">
+                        <span className="bg-bg1 border-1 border-bg2 text-primary group-hover:bg-bg2 transition py-1 rounded-lg cursor-pointer duration-100">
                           <a href="" className="font-medium italic">
                             On the Problem of Pride
                           </a>
                         </span>
-                        {/*<span
-                            className="font-mono text-sm bg-bg1 p-1 absolute left-0 top-6 rounded-b-lg opacity-0 group-hover:opacity-100 w-full transition duration-200"
-                            >Read more</span
-                          > */}
                       </span>
                       , in which I outline the problem of understanding and
                       argue for the world as will and representation.
@@ -73,18 +70,18 @@ const Home: NextPage = () => {
                     <li className="pb-1">
                       <span className="italic">
                         The World as Will and Representation
-                      </span>
+                      </span>{' '}
                       by Arthur Schopenhauer
                     </li>
                     <li className="pb-1">
                       <span className="italic">
                         Two Essays on Analytical Psychology
-                      </span>
+                      </span>{' '}
                       by Carl Jung
                     </li>
                     <li>
-                      <span className="italic">Deep Learning</span>
-                      by Ian Goodfellow
+                      <span className="italic">Deep Learning</span> by Ian
+                      Goodfellow
                     </li>
                   </ul>
                 </div>
