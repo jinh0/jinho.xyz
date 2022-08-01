@@ -8,7 +8,7 @@ const About = () => {
         <p className="font-bold text-xl md:text-2xl pb-3">About</p>
 
         <p className="pb-4">
-          Hi, I&apos;m an undergraduate student interested in
+          Hi! I&apos;m an undergraduate student interested in
           <span className="font-medium"> the problem of representation.</span>
         </p>
 
@@ -16,13 +16,16 @@ const About = () => {
 
         <ul className="list-disc list-outside pl-6">
           <li className="pb-2">
-            A series of essays, <Highlight text={'On the Problem of Pride'} />,
-            in which I outline the problem of understanding and argue for the
-            world as will and representation.
+            A series of essays, under the name{' '}
+            <Highlight text={'On the Problem of Pride'} />, in which I argue for
+            the world as will and representation.
           </li>
           <li>
-            <Highlight text={'An automated theorem prover'} /> written in OCaml
-            and TypeScript.
+            <Highlight
+              text={'An automated theorem prover'}
+              link="https://github.com/jinh0/gentzen"
+            />{' '}
+            written in OCaml and TypeScript.
           </li>
         </ul>
       </div>

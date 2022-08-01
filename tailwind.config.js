@@ -11,6 +11,9 @@ module.exports = {
       bg2: '#E5E9F0',
       bg3: '#D8DEE9',
       fg4: '#4C566A',
+
+      blue2: "#88C0D0",
+      
       primary: '#5E81AC',
     },
     extend: {

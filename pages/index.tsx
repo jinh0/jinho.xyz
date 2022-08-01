@@ -14,7 +14,7 @@ const Home: NextPage = () => {
 
       <div className="md:w-screen md:h-screen flex flex-row bg-gradient-to-r from-white-0 to-bg1 p-8 lg:p-24 transition-all text-[#2E3440]">
         <div className="w-full self-center flex flex-col md:flex-row">
-          <div className="w-full lg:w-3/5">
+          <div className="w-full lg:w-1/2">
             <div className="">
               <div className="flex flex-col">
                 <Heading />
@@ -23,12 +23,12 @@ const Home: NextPage = () => {
             </div>
             <Footer />
           </div>
-
+          {/* 
           <div className="hidden md:block pl-8">
             <p className="font-bold text-3xl pb-6">Writings</p>
 
             <p className="text-primary">My reading list.</p>
-          </div>
+          </div> */}
         </div>
       </div>
     </>
