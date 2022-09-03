@@ -19,7 +19,7 @@ const About = () => {
           <li className="pb-2">
             A series of essays,{' '}
             <Highlight text={'On the Problem of Pride'} isItalic={true} />, that
-            deals with the concept of understanding and "becoming".
+            deals with the concept of understanding and {'"'}becoming{'"'}.
           </li>
           <li>
             <Highlight
