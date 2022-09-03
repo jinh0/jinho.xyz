@@ -14,7 +14,8 @@ module.exports = {
 
       blue2: "#88C0D0",
       
-      primary: '#5E81AC',
+      // primary: '#5E81AC',
+      primary: '#3F6593',
     },
     extend: {
       keyframes: {
