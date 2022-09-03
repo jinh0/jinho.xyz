@@ -1,5 +1,6 @@
 import Highlight from '@components/Highlight'
 import React from 'react'
+import Book from './Book'
 
 const About = () => {
   return (
@@ -8,8 +9,8 @@ const About = () => {
         <p className="font-bold text-xl md:text-2xl pb-3">About</p>
 
         <p className="pb-4">
-          Hi! I&apos;m an undergraduate student interested in how the world is
-          represented by the mind. To that extent, I am interested in
+          Hi! I&apos;m an undergraduate student fascinated by how mental
+          representations of the world work. To that extent, I am interested in
           psychoanalysis, algorithms, and artificial intelligence.
         </p>
 
@@ -19,7 +20,7 @@ const About = () => {
           <li className="pb-2">
             A series of essays,{' '}
             <Highlight text={'On the Problem of Pride'} isItalic={true} />, that
-            deals with the concept of understanding and {'"'}becoming{'"'}.
+            deals with the concepts of understanding and {'"'}becoming{'"'}.
           </li>
           <li>
             <Highlight
@@ -36,16 +37,18 @@ const About = () => {
         </p>
 
         <ul className="list-disc list-outside pl-6">
-          <li className="pb-3">
-            <span className="italic">
-              Structure and Interpretation of Computer Programs
-            </span>{' '}
-            by Harold Abelson
-          </li>
-          <li className="last:pb-0 pb-3">
-            <span className="italic">Introduction to Real Analysis</span> by
-            Robert Brabenec
-          </li>
+          <Book
+            title="Structure and Interpretation of Computer Programs"
+            author="Harold Abelson"
+          />
+          <Book
+            title="Aion: Researches into the Phenomenology of the Self"
+            author="Carl Jung"
+          />
+          <Book
+            title="Introduction to Real Analysis"
+            author="Robert Brabenec"
+          />
         </ul>
       </div>
     </>
