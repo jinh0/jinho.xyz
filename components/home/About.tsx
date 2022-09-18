@@ -42,12 +42,8 @@ const About = () => {
             author="Harold Abelson"
           />
           <Book
-            title="Aion: Researches into the Phenomenology of the Self"
+            title="Archetypes and the Collective Unconscious"
             author="Carl Jung"
-          />
-          <Book
-            title="Introduction to Real Analysis"
-            author="Robert Brabenec"
           />
         </ul>
       </div>
