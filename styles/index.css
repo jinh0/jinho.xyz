@@ -579,12 +579,36 @@ video {
   margin-bottom: 1rem;
 }
 
+.mr-2 {
+  margin-right: 0.5rem;
+}
+
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
 .flex {
   display: flex;
 }
 
 .hidden {
   display: none;
+}
+
+.h-6 {
+  height: 1.5rem;
+}
+
+.h-4 {
+  height: 1rem;
+}
+
+.h-5 {
+  height: 1.25rem;
 }
 
 .w-full {
@@ -595,6 +619,27 @@ video {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+}
+
+.w-1\/2 {
+  width: 50%;
+}
+
+.w-6 {
+  width: 1.5rem;
+}
+
+.w-4 {
+  width: 1rem;
+}
+
+.w-5 {
+  width: 1.25rem;
+}
+
+.-translate-x-3 {
+  --tw-translate-x: -0.75rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .cursor-pointer {
@@ -615,6 +660,14 @@ video {
 
 .flex-col {
   flex-direction: column;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
 }
 
 .self-center {
@@ -691,6 +744,21 @@ video {
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
 }
 
 .pb-8 {
@@ -844,6 +912,11 @@ video {
   padding-bottom: 0px;
 }
 
+.hover\:translate-x-0:hover {
+  --tw-translate-x: 0px;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .hover\:border-y:hover {
   border-top-width: 1px;
   border-bottom-width: 1px;
@@ -862,6 +935,16 @@ video {
 .hover\:bg-bg1:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(236 239 244 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-bg2:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 233 240 / var(--tw-bg-opacity));
+}
+
+.hover\:px-3:hover {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
 }
 
 .hover\:text-\[\#5E81AC\]:hover {
@@ -931,5 +1014,17 @@ video {
 
   .lg\:p-24 {
     padding: 6rem;
+  }
+
+  .lg\:p-20 {
+    padding: 5rem;
+  }
+
+  .lg\:pt-20 {
+    padding-top: 5rem;
+  }
+
+  .lg\:pt-10 {
+    padding-top: 2.5rem;
   }
 }
