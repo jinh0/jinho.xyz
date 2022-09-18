@@ -2,10 +2,12 @@ import React from 'react'
 
 const Highlight = ({
   text,
+  subtitle,
   link = '',
   isItalic = false,
 }: {
   text: string
+  subtitle?: string
   link?: string
   isItalic?: boolean
 }) => {
@@ -18,9 +20,13 @@ const Highlight = ({
         </a>
       </span>
 
+      {subtitle ?
+
       <span className="shadow-xl border border-[#D8DEE9] peer-hover:z-50 absolute left-0 top-12 peer-hover:-translate-y-4 opacity-0 peer-hover:opacity-100 transition ease-in-out duration-150 p-3 bg-bg1 rounded-md">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-      </span>
+        {subtitle}
+      </span>: <></>
+      }
+
     </span>
   )
 }

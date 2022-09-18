@@ -1,6 +1,7 @@
 import About from '@components/home/About'
 import Footer from '@components/home/Footer'
 import Heading from '@components/home/Heading'
+import Writings from '@components/home/Writings'
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import React from 'react'
@@ -23,12 +24,8 @@ const Home: NextPage = () => {
             </div>
             <Footer />
           </div>
-          {/* 
-          <div className="hidden md:block pl-8">
-            <p className="font-bold text-3xl pb-6">Writings</p>
 
-            <p className="text-primary">My reading list.</p>
-          </div> */}
+          {/* <Writings /> */}
         </div>
       </div>
     </>
