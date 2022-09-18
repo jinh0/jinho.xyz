@@ -33,10 +33,7 @@ const About = () => {
 
         <p>
           A lot of people ask me what books to read, so{' '}
-          <Highlight
-            text="here is a list of books that I found most helpful."
-            link="/reading-list"
-          />
+          <Highlight text="here is a list of books" link="/reading-list" />.
         </p>
       </div>
       <div className="pb-8 text-base md:text-xl">

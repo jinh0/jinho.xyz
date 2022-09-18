@@ -1,31 +1,27 @@
+import Article from '@components/Article'
+import GoBack from '@components/GoBack'
+import Book from '@components/home/Book'
+import Title from '@components/Title'
 import Link from 'next/link'
 
 const ReadingList = () => {
   return (
-    <div className="items-center flex flex-col md:w-screen md:h-screen p-8 lg:p-24 transition-all">
-      <div className="w-1/2">
-        <Link href="/">
-          <p className="flex flex-row items-center font-semibold cursor-pointer hover:bg-bg1 rounded-lg transition w-fit -translate-x-3 px-3 py-2">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth={1.5}
-              stroke="currentColor"
-              className="w-5 h-5 mr-2"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18"
-              />
-            </svg>
-            Go back
-          </p>
-        </Link>
-        <p className="mt-2 text-4xl font-bold">Reading List</p>
-      </div>
-    </div>
+    <Article>
+      <GoBack />
+      <Title>Reading List</Title>
+
+      <ul className="list-disc list-outside pl-6 text-xl">
+        <Book title="The Interpretation of Dreams" author="Sigmund Freud" />
+        <Book title="Symbols of Transformation" author="Carl Jung" />
+        <Book title="The Bible" author="Anonymous" />
+        <Book
+          title="Structure and Interpretation of Computer Programs"
+          author="Harold Abelson"
+        />
+        <Book title="Crime and Punishment" author="Fyodor Dostoyevsky" />
+        <Book title="Siddhartha" author="Hermann Hesse" />
+      </ul>
+    </Article>
   )
 }
 
