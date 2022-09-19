@@ -14,8 +14,8 @@ const Home: NextPage = () => {
       </Head>
 
       <div className="md:w-screen md:h-screen flex flex-row p-8 lg:p-24 transition-all">
-        <div className="w-full self-center flex flex-col md:flex-row">
-          <div className="w-full lg:w-3/5">
+        <div className="w-full self-center justify-center items-center flex flex-col md:flex-row">
+          <div className="w-full xl:w-1/2">
             <div className="">
               <div className="flex flex-col">
                 <Heading />

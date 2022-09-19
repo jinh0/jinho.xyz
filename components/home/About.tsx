@@ -9,9 +9,9 @@ const About = () => {
         <p className="font-bold text-xl md:text-2xl pb-3">About</p>
 
         <p className="pb-4">
-          Hi! I&apos;m an undergraduate student fascinated by how mental
+          Hi! I&apos;m an undergraduate student interested in how mental
           representations of the world work. To that extent, I am interested in
-          psychoanalysis, algorithms, and artificial intelligence.
+          artificial intelligence, psychoanalysis, and logic.
         </p>
 
         <p className="pb-2">I am currently working on:</p>
@@ -33,7 +33,7 @@ const About = () => {
 
         <p>
           A lot of people ask me what books to read, so{' '}
-          <Highlight text="here is a list of books" link="/reading-list" />.
+          <Highlight text="here is a list of books" link="/books" />.
         </p>
       </div>
       <div className="pb-8 text-base md:text-xl">

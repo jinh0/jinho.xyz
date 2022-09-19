@@ -5,10 +5,10 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <div className="font-medium text-base flex flex-col md:flex-row pt-2 border-t-2 border-fg4 w-full">
+    <div className="text-base flex flex-col md:flex-row pt-2 border-t-2 border-fg4 w-full">
       <a
         href="https://www.github.com/jinh0"
-        className="flex flex-row rounded-md hover:bg-bg1 p-3 transition duration-150 mr-1"
+        className="flex flex-row rounded-lg hover:bg-bg1 p-3 transition duration-150 mr-1"
       >
         <FontAwesomeIcon
           icon={faGithub}
@@ -18,7 +18,7 @@ const Footer = () => {
       </a>
       <a
         href="mailto:jinho.yoon@mcgill.ca"
-        className="flex flex-row rounded-md hover:bg-bg1 p-3 transition duration-150 mr-1"
+        className="flex flex-row rounded-lg hover:bg-bg1 p-3 transition duration-150 mr-1"
       >
         <FontAwesomeIcon
           icon={faEnvelopeOpen}
@@ -28,7 +28,7 @@ const Footer = () => {
       </a>
       <a
         href=""
-        className="flex flex-row rounded-md hover:bg-bg1 p-3 transition duration-150 mr-1"
+        className="flex flex-row rounded-lg hover:bg-bg1 p-3 transition duration-150 mr-1"
       >
         <FontAwesomeIcon
           icon={faFile}

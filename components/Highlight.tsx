@@ -16,8 +16,8 @@ const Highlight = ({
     <span className="relative w-fit">
       {/* <span className="bg-bg1 border-bg2 text-primary group-hover:bg-bg2 transition p-1 rounded-md cursor-pointer duration-100"> */}
       <span className="peer font-semibold border-bg2 text-primary hover:text-[#5E81AC] transition cursor-pointer duration-150 underline underline-offset-4">
-        <Link href={link} className={`${isItalic ? 'italic' : ''}`}>
-          {text}
+        <Link href={link}>
+          <span className={isItalic ? 'italic' : ''}>{text}</span>
         </Link>
       </span>
 
