@@ -15,15 +15,29 @@ const ReadingList = () => {
       <GoBack />
       <Title>Great Books</Title>
 
+      <p className="italic mt-4 md:text-xl">
+        These are books I believe have fundamentally shaped my thinking.
+      </p>
+
+      <p className=" italic mb-6 md:text-xl">
+        I hope to expand this list as time goes by.
+      </p>
+
       <List>
         <Book title="The Interpretation of Dreams" author="Sigmund Freud" />
         <Book title="Symbols of Transformation" author="Carl Jung" />
+        <Book title="Maps of Meaning" author="Jordan Peterson" />
+        <Book title="Understanding Life" author="Alfred Adler" />
         <Book
-          title="Structure and Interpretation of Computer Programs"
+          title="Structure & Interpretation of Computer Programs"
           author="Harold Abelson"
         />
+        <Book title="Beyond Good and Evil" author="Friedrich Nietzsche" />
+        <Book title="Cosmos" author="Carl Sagan" />
         <Book title="Crime and Punishment" author="Fyodor Dostoyevsky" />
-        <Book title="Faust, Part One" author="Johann Wolfgang von Goethe" />
+        <Book title="The Pilgrim's Progress" author="John Bunyan" />
+        <Book title="Siddhartha" author="Hermann Hesse" />
+        <Book title="Faust" author="Johann Wolfgang von Goethe" />
         <Book title="The Bible" author="Anonymous" />
       </List>
     </Article>
