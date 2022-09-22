@@ -15,7 +15,7 @@ const ReadingList = () => {
       <GoBack />
       <Title>Great Books</Title>
 
-      <p className="italic mt-4 md:text-xl">
+      <p className="italic mb-6 mt-4 md:text-xl">
         These are books I believe have fundamentally shaped my thinking.
       </p>
 
