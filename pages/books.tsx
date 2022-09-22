@@ -19,10 +19,6 @@ const ReadingList = () => {
         These are books I believe have fundamentally shaped my thinking.
       </p>
 
-      <p className=" italic mb-6 md:text-xl">
-        I hope to expand this list as time goes by.
-      </p>
-
       <List>
         <Book title="The Interpretation of Dreams" author="Sigmund Freud" />
         <Book title="Symbols of Transformation" author="Carl Jung" />
