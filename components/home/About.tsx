@@ -19,8 +19,9 @@ const About = () => {
         <ul className="list-disc list-outside pl-6 pb-6">
           <li className="pb-2">
             A series of essays,{' '}
-            <Highlight text={'On the Problem of Pride'} isItalic={true} />, that
-            deals with the concepts of understanding and {'"'}becoming{'"'}.
+            <Highlight text={'On the Problem of Pride'} isItalic={true} />, in which
+            I have been laying the philosophical groundwork for an analysis of
+            psychological growth.
           </li>
           <li>
             <Highlight
