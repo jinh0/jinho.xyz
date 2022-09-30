@@ -12,7 +12,6 @@ const ReadingList = () => {
         <title>Book Recommendations</title>
       </Head>
 
-      <GoBack />
       <Title>Great Books</Title>
 
       <p className="italic mb-6 mt-4 md:text-xl">

@@ -567,6 +567,19 @@ video {
   top: 3rem;
 }
 
+.my-2 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
 .mr-2 {
   margin-right: 0.5rem;
 }
@@ -579,6 +592,18 @@ video {
   margin-bottom: 1rem;
 }
 
+.mb-0\.5 {
+  margin-bottom: 0.125rem;
+}
+
+.mb-0 {
+  margin-bottom: 0px;
+}
+
+.mb-3 {
+  margin-bottom: 0.75rem;
+}
+
 .mr-1 {
   margin-right: 0.25rem;
 }
@@ -589,18 +614,6 @@ video {
 
 .mb-2 {
   margin-bottom: 0.5rem;
-}
-
-.mt-4 {
-  margin-top: 1rem;
-}
-
-.mb-8 {
-  margin-bottom: 2rem;
-}
-
-.mb-6 {
-  margin-bottom: 1.5rem;
 }
 
 .mb-1 {
@@ -720,6 +733,10 @@ video {
   padding: 2rem;
 }
 
+.p-10 {
+  padding: 2.5rem;
+}
+
 .p-1 {
   padding: 0.25rem;
 }
@@ -730,11 +747,6 @@ video {
 
 .p-2 {
   padding: 0.5rem;
-}
-
-.py-24 {
-  padding-top: 6rem;
-  padding-bottom: 6rem;
 }
 
 .px-3 {
@@ -756,6 +768,10 @@ video {
   padding-left: 1.5rem;
 }
 
+.pb-2 {
+  padding-bottom: 0.5rem;
+}
+
 .pb-8 {
   padding-bottom: 2rem;
 }
@@ -766,10 +782,6 @@ video {
 
 .pb-4 {
   padding-bottom: 1rem;
-}
-
-.pb-2 {
-  padding-bottom: 0.5rem;
 }
 
 .pb-6 {
@@ -790,6 +802,11 @@ video {
 
 .font-mono {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
 }
 
 .text-3xl {
@@ -823,6 +840,10 @@ video {
 
 .font-bold {
   font-weight: 700;
+}
+
+.font-light {
+  font-weight: 300;
 }
 
 .font-medium {
@@ -949,14 +970,13 @@ video {
     flex-direction: row;
   }
 
+  .md\:p-20 {
+    padding: 5rem;
+  }
+
   .md\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
-  }
-
-  .md\:text-4xl {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
   }
 
   .md\:text-2xl {

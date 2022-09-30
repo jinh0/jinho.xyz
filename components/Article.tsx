@@ -1,8 +1,25 @@
-const Article = ({ children }: { children: string | JSX.Element[] }) => {
+import Head from 'next/head'
+import GoBack from './GoBack'
+
+const Article = ({
+  title,
+  children,
+}: {
+  title?: string
+  children: string | JSX.Element[]
+}) => {
   return (
-    <div className="items-center flex flex-col md:w-screen md:h-screen p-8 py-24 lg:p-24 transition-all">
-      <div className="w-full lg:w-1/2">{children}</div>
-    </div>
+    <>
+      <Head>
+        <title>{title}</title>
+      </Head>
+      <div className="items-center flex flex-col md:w-screen md:h-screen p-10 md:p-20  transition-all">
+        <div className="w-full lg:w-1/2">
+          <GoBack />
+          {children}
+        </div>
+      </div>
+    </>
   )
 }
 

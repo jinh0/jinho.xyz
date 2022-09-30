@@ -19,9 +19,13 @@ const About = () => {
         <ul className="list-disc list-outside pl-6 pb-6">
           <li className="pb-2">
             A series of essays,{' '}
-            <Highlight text={'On the Problem of Pride'} isItalic={true} />, in which
-            I have been laying the philosophical groundwork for an analysis of
-            psychological growth.
+            <Highlight
+              text={'On the Problem of Pride'}
+              // link="/writing"
+              isItalic={true}
+            />
+            , in which I have been laying the philosophical groundwork for an
+            analysis of psychological growth.
           </li>
           <li>
             <Highlight
@@ -43,14 +47,7 @@ const About = () => {
         </p>
 
         <ul className="list-disc list-outside pl-6">
-          <Book
-            title="Structure and Interpretation of Computer Programs"
-            author="Harold Abelson"
-          />
-          <Book
-            title="Archetypes and the Collective Unconscious"
-            author="Carl Jung"
-          />
+          <Book title="The Burnout Society" author="Byung-Chul Han" />
         </ul>
       </div>
     </>

@@ -1,10 +1,10 @@
 import About from '@components/home/About'
 import Footer from '@components/home/Footer'
 import Heading from '@components/home/Heading'
-import Writings from '@components/home/Writings'
-import type { NextPage } from 'next'
 import Head from 'next/head'
 import React from 'react'
+
+import type { NextPage } from 'next'
 
 const Home: NextPage = () => {
   return (
