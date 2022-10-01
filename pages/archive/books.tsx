@@ -7,7 +7,7 @@ import Head from 'next/head'
 
 const ReadingList = () => {
   return (
-    <Article>
+    <Article title="Archived Reading List">
       <Head>
         <title>Book Recommendations</title>
       </Head>

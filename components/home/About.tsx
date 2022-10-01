@@ -19,26 +19,29 @@ const About = () => {
         <ul className="list-disc list-outside pl-6 pb-6">
           <li className="pb-2">
             A series of essays,{' '}
-            <Highlight
-              text={'On the Problem of Pride'}
-              // link="/writing"
-              isItalic={true}
-            />
-            , in which I have been laying the philosophical groundwork for an
+            <Highlight isItalic={true}>On the Problem of Pride</Highlight>, in
+            which I have been laying the philosophical groundwork for an
             analysis of psychological growth.
           </li>
           <li>
-            <Highlight
-              text={'An automated theorem prover'}
-              link="https://github.com/jinh0/gentzen"
-            />{' '}
+            <Highlight href="https://github.com/jinh0/gentzen">
+              An automated theorem prover
+            </Highlight>{' '}
             for propositional logic written in OCaml and TypeScript.
           </li>
         </ul>
 
-        <p>
+        <p className="pb-2">
           A lot of people ask me what books to read, so{' '}
-          <Highlight text="here is a list of books" link="/books" />.
+          <Highlight href="/books">here is a list of books</Highlight>.
+        </p>
+
+        <p>
+          Here{"'"}s{' '}
+          <Highlight href="/writings/groups">
+            some notes about group theory
+          </Highlight>
+          .
         </p>
       </div>
       <div className="pb-8 text-base md:text-xl">
