@@ -7,7 +7,7 @@ const H2: React.FC<{ children?: any }> = ({ children }) => {
 }
 
 const H3: React.FC<{ children?: any }> = ({ children }) => {
-  return <p className="font-bold text-xl mb-3 mt-2">{children}</p>
+  return <p className="font-bold text-xl mb-4 mt-2">{children}</p>
 }
 
 export default {

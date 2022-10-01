@@ -20,14 +20,16 @@ const Article = ({
           crossOrigin="anonymous"
         ></link>
       </Head>
-      <div className="items-center flex flex-col md:w-screen md:h-screen p-6 md:p-20 md:text-lg transition-all">
-        <div className="w-full lg:w-1/2">
+      <div className="items-center flex flex-col md:w-screen md:h-screen p-6 md:p-20 md:text-lg transition-all leading-relaxed select-none">
+        <div className="w-full lg:w-1/2 select-text">
           <GoBack />
           <Title>{title}</Title>
-          <span className="">Last Updated: September 30th, 2022</span>
+          <div className="text-sm mb-8">
+            <span className="mt-2">Sept. 30th, 2022</span>
+            <span className="ml-5">Updated Sept. 31st</span>
+          </div>
 
-          <div className="mb-4"></div>
-          <hr className="mb-6" />
+          <hr className="mb-8" />
 
           {children}
         </div>

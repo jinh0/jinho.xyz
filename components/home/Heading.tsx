@@ -7,8 +7,7 @@ const Heading = () => {
         Jinho Yoon
       </p>
       <p className="self-center text-base md:text-xl font-normal font-mono">
-        Honours Math & Computer Science
-        @ McGill University
+        Honours Math & Computer Science @ McGill University
       </p>
     </div>
   )

@@ -14,8 +14,7 @@ const Highlight = ({
 }) => {
   return (
     <span className="relative w-fit">
-      {/* <span className="bg-bg1 border-bg2 text-primary group-hover:bg-bg2 transition p-1 rounded-md cursor-pointer duration-100"> */}
-      <span className="peer font-medium  border-bg2 text-primary hover:text-[#5E81AC] transition cursor-pointer duration-150 hover:underline underline-offset-4">
+      <span className="peer font-medium  border-bg2 text-primary hover:text-[#5E81AC] transition cursor-pointer duration-150 underline decoration-transparent hover:decoration-[#5E81AC] underline-offset-4">
         <Link href={link}>
           <span className={isItalic ? 'italic' : ''}>{children}</span>
         </Link>

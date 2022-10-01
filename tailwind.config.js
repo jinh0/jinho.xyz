@@ -5,18 +5,6 @@ module.exports = {
     './components/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
-    colors: {
-      bg0: '#f4f5f8',
-      bg1: '#ECEFF4',
-      bg2: '#E5E9F0',
-      bg3: '#D8DEE9',
-      fg4: '#4C566A',
-
-      blue2: "#88C0D0",
-      
-      // primary: '#5E81AC',
-      primary: '#3F6593',
-    },
     extend: {
       keyframes: {
         fadeIn: {
@@ -26,6 +14,18 @@ module.exports = {
       },
       animation: {
         fadeIn: 'fadeIn 0.2s ease-in-out',
+      },
+      colors: {
+        bg0: '#f4f5f8',
+        bg1: '#ECEFF4',
+        bg2: '#E5E9F0',
+        bg3: '#D8DEE9',
+        fg4: '#4C566A',
+
+        blue2: "#88C0D0",
+        
+        // primary: '#5E81AC',
+        primary: '#3F6593',
       },
     },
   },
