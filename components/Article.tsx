@@ -20,7 +20,7 @@ const Article = ({
           crossOrigin="anonymous"
         ></link>
       </Head>
-      <div className="items-center flex flex-col md:w-screen md:h-screen p-10 md:p-20 text-lg transition-all">
+      <div className="items-center flex flex-col md:w-screen md:h-screen p-6 md:p-20 md:text-lg transition-all">
         <div className="w-full lg:w-1/2">
           <GoBack />
           <Title>{title}</Title>

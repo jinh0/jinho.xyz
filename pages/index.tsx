@@ -13,7 +13,7 @@ const Home: NextPage = () => {
         <title>Jinho Yoon</title>
       </Head>
 
-      <div className="md:w-screen md:h-screen flex flex-row p-8 lg:p-24 transition-all">
+      <div className="md:w-screen md:h-screen flex flex-row p-6 lg:p-24 transition-all">
         <div className="w-full self-center justify-center items-center flex flex-col md:flex-row">
           <div className="w-full xl:w-1/2">
             <div className="">
