@@ -1,10 +1,11 @@
 import About from '@components/home/About'
 import Footer from '@components/home/Footer'
 import Heading from '@components/home/Heading'
+import { NextPage } from 'next'
 import Head from 'next/head'
 import React from 'react'
 
-const Home = ({ children }: { children: JSX.Element }) => {
+const Home: NextPage<{ test: any; children: any }> = ({ test, children }) => {
   return (
     <>
       <Head>
@@ -16,6 +17,7 @@ const Home = ({ children }: { children: JSX.Element }) => {
           <div className="w-full xl:w-1/2">
             <div className="">
               <div className="flex flex-col">
+                {test}
                 <Heading />
 
                 <div className="pb-8 text-base md:text-xl">{children}</div>
