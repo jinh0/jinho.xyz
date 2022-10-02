@@ -6,7 +6,7 @@ const About = () => {
   return (
     <>
       <div className="pb-8 text-base md:text-xl">
-        <p className="font-bold text-xl md:text-2xl pb-4">About</p>
+        <p className="font-bold text-xl md:text-2xl pb-4 text-polar2">About</p>
 
         <p className="pb-6">
           Hi! I&apos;m an undergraduate student interested in how mental

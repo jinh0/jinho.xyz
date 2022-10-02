@@ -26,6 +26,9 @@ module.exports = {
         
         // primary: '#5E81AC',
         primary: '#3F6593',
+
+        polar1: '#2E3440',
+        polar2: '#3B4252',
       },
     },
   },

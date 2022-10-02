@@ -4,9 +4,7 @@ import Heading from '@components/home/Heading'
 import Head from 'next/head'
 import React from 'react'
 
-import type { NextPage } from 'next'
-
-const Home: NextPage = () => {
+const Home = ({ children }: { children: JSX.Element }) => {
   return (
     <>
       <Head>
@@ -19,13 +17,13 @@ const Home: NextPage = () => {
             <div className="">
               <div className="flex flex-col">
                 <Heading />
-                <About />
+
+                <div className="pb-8 text-base md:text-xl">{children}</div>
               </div>
             </div>
+
             <Footer />
           </div>
-
-          {/* <Writings /> */}
         </div>
       </div>
     </>
