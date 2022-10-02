@@ -29,6 +29,8 @@ module.exports = {
 
         polar1: '#2E3440',
         polar2: '#3B4252',
+        polar3: '#434C5E',
+        polar4: '#4C566A'
       },
     },
   },
