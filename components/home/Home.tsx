@@ -12,7 +12,7 @@ const Home: NextPage<{ test: any; children: any }> = ({ test, children }) => {
         <title>Jinho Yoon</title>
       </Head>
 
-      <div className="min-h-screen md:w-screen md:h-screen relative flex flex-row p-6 lg:p-24 leading-relaxed select-none">
+      <div className="min-h-screen md:w-screen relative flex flex-row p-6 lg:p-24 leading-relaxed select-none">
         <div className="w-full self-center justify-center items-center flex flex-col md:flex-row select-text">
           <div className="w-full xl:w-1/2">
             <div className="">
@@ -20,7 +20,9 @@ const Home: NextPage<{ test: any; children: any }> = ({ test, children }) => {
                 {test}
                 <Heading />
 
-                <div className="pb-8 text-base md:text-xl">{children}</div>
+                <div className="pb-4 text-base md:text-lg leading-normal">
+                  {children}
+                </div>
               </div>
             </div>
 
