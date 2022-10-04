@@ -4,9 +4,13 @@ import Title from './Title'
 
 const Article = ({
   title,
+  subtitle,
+  ctime,
   children,
 }: {
   title: string
+  subtitle?: string
+  ctime?: string
   children: string | JSX.Element[]
 }) => {
   return (
@@ -20,13 +24,25 @@ const Article = ({
           crossOrigin="anonymous"
         ></link>
       </Head>
-      <div className="items-center flex flex-col md:w-screen md:h-screen p-6 md:p-20 md:text-lg transition-all leading-relaxed select-none">
+      <div className="items-center flex flex-col md:w-screen md:h-screen p-6 md:pt-16 md:p-20 md:text-lg transition-all leading-relaxed select-none">
         <div className="w-full lg:w-1/2 select-text">
           <GoBack />
           <Title>{title}</Title>
-          <div className="text-sm mb-8">
-            <span className="mt-2">Sept. 30th, 2022</span>
-            <span className="ml-5">Updated Sept. 31st</span>
+
+          {subtitle && <div className="mb-4 text-polar1">{subtitle}</div>}
+
+          <div className="text-polar4 text-sm mb-4">
+            {ctime ? (
+              <>
+                <span className="mt-2">{ctime}</span>
+                <span className="ml-5"></span>
+              </>
+            ) : (
+              <>
+                <span className="mt-2">Sept. 30th, 2022</span>
+                <span className="ml-5"></span>
+              </>
+            )}
           </div>
 
           <hr className="mb-8" />

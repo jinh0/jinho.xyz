@@ -3,14 +3,14 @@ import Link from 'next/link'
 const GoBack = () => {
   return (
     <Link href="/">
-      <p className="group flex flex-row items-center font-medium cursor-pointer hover:bg-bg0 rounded-lg transition w-fit -translate-x-3 px-3 py-2">
+      <p className="group flex flex-row items-center font-medium cursor-pointer hover:bg-bg0 text-polar4 text-sm rounded-lg transition w-fit -translate-x-3 px-3 py-2">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"
           strokeWidth={1.5}
           stroke="currentColor"
-          className="w-5 h-5 mr-2"
+          className="w-4 h-4 mr-2"
         >
           <path
             strokeLinecap="round"
