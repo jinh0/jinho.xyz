@@ -18,6 +18,7 @@ function formatDate(date: Date) {
 }
 
 export async function getStaticProps() {
+  console.log(__filename)
   const file = await fs.stat(__filename)
   console.log(file.ctime)
   console.log(file.mtime)

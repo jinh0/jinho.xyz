@@ -1,5 +1,5 @@
 const H1: React.FC<{ children?: any }> = ({ children }) => {
-  return <p className="font-bold text-3xl mb-4 text-polar1">{children}</p>
+  return <p className="font-bold text-3xl mt-8 mb-6 text-polar1">{children}</p>
 }
 
 const H2: React.FC<{ children?: any }> = ({ children }) => {

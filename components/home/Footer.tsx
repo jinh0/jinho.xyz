@@ -16,7 +16,7 @@ const Button = ({ text, href }: { text: string; href?: string }) => {
 
 const Footer = () => {
   return (
-    <div className="text-sm flex flex-row items-center mt-6 pt-4 border-t w-full text-polar4">
+    <div className="text-sm flex flex-row items-center pt-4 border-t w-full text-polar4">
       <a
         href="https://www.github.com/jinh0"
         className="flex flex-row rounded-xl hover:bg-bg0 p-2 transition duration-150"
@@ -59,9 +59,6 @@ const Footer = () => {
 
         {/* <p className="self-center">Resume</p> */}
       </a>
-      <div className="ml-2 pl-4 border-l">
-        Written in Next.js and TailwindCSS.
-      </div>
     </div>
   )
 }

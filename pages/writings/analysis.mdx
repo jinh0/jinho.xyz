@@ -1,5 +1,56 @@
 import Article from '@components/Article'
-export { getStaticProps } from '@utils/blogMeta'
 
-<Article title="Notes on Real Analysis" ctime={props.ctime} subtitle="All the things I want to remember while taking MATH 254: Honours Analysis 1.">
+<Article
+  title="Notes on Real Analysis"
+  ctime="Oct. 4, 2022"
+  subtitle="All the things I want to remember for MATH 254: Honours Analysis 1."
+>
+
+
+# 1. Preliminaries
+
+$f(A) = \{f(x) : x \in A\};\, f^{-1}(B) = \{ x : f(x) \in B \}$
+
+A function has *injectivity* if $f(a) = f(b)$, then $a = b$.
+
+A function has *surjectivity* if for all $y \in B$, there exists an $x \in A$ such that
+$f(x) = y$, where $f : A \rightarrow B$.
+
+Two sets $A, B$ are *equinumerous* if there exists a bijection $A \rightarrow B$.
+
+# 2. The Real Numbers
+
+**Triangle inequality:** $|a + b| \leq |a| + |b|$.
+
+**Archimedean property:** for all $\epsilon \in \mathbb{R}, \epsilon > 0$,
+there exists $n \in \mathbb{N}$ s.t. $\frac{1}{n} < \epsilon$.
+
+$\mathbb{R}$ is *not countable*, by Cantor's diagonalization.
+
+$\mathbb{Q}$ is *dense* in $\mathbb{R}$: $\forall a, b \in \mathbb{R}$, $a < b$, there exists $c \in \mathbb{Q}$ such that $a < c < b$.
+Similarly, there exists an irrational number between $a$ and $b$.
+
+$u$ is an upper bound of the set $S$ if $\forall u \in S, u \geq s$.
+An upper bound $u$ is the *supremum* if for all upper bounds $v$,
+$u < v$. Similarly for the upper bound.
+
+Equivalently,
+$u = \text{sup}\, S$ if $\forall \epsilon > 0, \exists s_0 \in S$ s.t. $s_0 > u - \epsilon$.
+
+**Completeness property:** every non-empty set in $\mathbb{R}$ that
+has an upper bound also has a supremum.
+
+# 3. Sequences and Limits
+
+An open ball of radius $r \geq 0$ about $x \in \mathbb{R}$ is defined as
+$B_r(x) := \{ y \in \mathbb{R} : |x - y| < r \}$.
+
+A sequence $(x_n)$ has a **limit** at $x$ (converges to $x \in \mathbb{R}$) if
+$\forall \epsilon > 0, \exists N\,\, \forall n \geq N$, $|x_n - x| < \epsilon$.
+We denote this by $\lim_{n \rightarrow \infty} x_n = x$ or $x_n \rightarrow x$ as $n \rightarrow \infty$.
+
+$\forall^{\infty}n = \exists N\,\, \forall n \geq N$ = "eventually" for all $n$, for all large enough $n$.
+
+$\exists^{\infty}n = \forall N\,\, \exists n \geq N$ = for infinitely many $n$.
+
 </Article>
