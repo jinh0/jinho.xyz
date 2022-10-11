@@ -6,11 +6,13 @@ const Article = ({
   title,
   subtitle,
   ctime,
+  utime,
   children,
 }: {
   title: string
   subtitle?: string
   ctime?: string
+  utime?: string
   children: string | JSX.Element[]
 }) => {
   return (
@@ -29,23 +31,27 @@ const Article = ({
           <GoBack />
           <Title>{title}</Title>
 
-          {subtitle && <div className="mb-4 text-polar1">{subtitle}</div>}
+          {subtitle && (
+            <div className="mb-8 text-polar1 font-semibold">{subtitle}</div>
+          )}
 
           <div className="text-polar4 text-sm mb-4">
-            {ctime ? (
-              <>
-                <span className="mt-2">{ctime}</span>
-                <span className="ml-5"></span>
-              </>
-            ) : (
-              <>
-                <span className="mt-2">Sept. 30th, 2022</span>
-                <span className="ml-5"></span>
-              </>
+            <span className="">{ctime ? ctime : 'Sept. 30th, 2022'}</span>
+            {utime && (
+              <span className="ml-5">
+                <span className="font-semibold">Updated: </span>
+                {utime}
+              </span>
             )}
           </div>
 
-          <hr className="mb-12" />
+          <div className="mb-8"></div>
+
+          <div className="">
+            <hr className="absolute w-screen left-0" />
+          </div>
+
+          <div className="mt-20"></div>
 
           {children}
         </div>
