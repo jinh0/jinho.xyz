@@ -3,6 +3,7 @@ import Article from '@components/Article'
 <Article
   title="Graph Theory"
   ctime="Oct. 11, 2022"
+  utime="Oct. 12, 2022"
   subtitle="Notes for MATH 350: Discrete Mathematics."
 >
 
@@ -14,5 +15,34 @@ import Article from '@components/Article'
 - $G$ is bipartite.
 - $G$ contains no closed walk of odd length.
 - $G$ contains no cycles with an odd number of vertices.
+
+# 7. Matchings of Bipartite Graphs
+
+## Definitions
+
+A **matching** $M$ of graph $G$ is a collection of non-loop edges of $G$ such that
+every vertex is incident to at most one edge in $M$.
+
+$X \subset G$ is a **vertex cover** if all edges of $G$ have an end in $X$.
+
+$\nu(G)$ = maximum matching number; $\tau(G)$ = minimum vertex cover.
+
+## Theorems
+
+**Lemma 7.1:** Let $G$ be a graph, then $\nu(G) \leq \tau(G) \leq 2\nu(G)$.
+
+**Lemma 7.2:** A matching $M$ in $G$ has maximum size if and only if there does
+not exist an $M$-augmenting path in $G$.
+
+**Theorem 7.3** (Konig): If $G$ is bipartite, then $\nu(G) = \tau(G)$.
+
+**Theorem 7.4:** Let $d \geq 1$ be an integer and $G$ be a bipartite graph s.t. $\text{deg}_G(v) = d$
+for every $v \in G$.  Then, there exists a **perfect matching** of $G$. (A matching is perfect if every
+vertex of $G$ is incident to an edge in $M$.)
+
+**Theorem 7.5:** Let $G$ be a bipartite graph with bipartition ($A, B$).
+Let $N(S)$ denote the set of vertices that are adjacent to at least one vertex in the set $S$.
+Then $G$ has a matching $M$ covering $A$ (every vertex of $A$ is incident to an edge of $M$) if
+and only if $N(S) \geq S$ for every $S \subset A$.
 
 </Article>
