@@ -2,6 +2,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faEnvelope, faFile } from '@fortawesome/free-solid-svg-icons'
 import React from 'react'
+import Link from 'next/link'
 
 const Button = ({ text, href }: { text: string; href?: string }) => {
   return (
@@ -44,7 +45,7 @@ const Footer = () => {
         {/* <p className="self-center">Email</p> */}
       </a>
       <a
-        href=""
+        href="/Jinho Yoon Resume.pdf"
         className="flex flex-row rounded-xl hover:bg-bg0 p-2 transition duration-150"
       >
         <svg

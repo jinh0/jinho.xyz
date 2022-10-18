@@ -26,12 +26,30 @@ import List from '@components/blog/List'
 import Paragraph from '@components/blog/Paragraph'
 import Bold from '@components/blog/Bold'
 import Link from '@components/blog/Link'
+import Script from 'next/script'
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <MDXProvider components={components}>
-      <Component {...pageProps} />
-    </MDXProvider>
+    <>
+      <Script
+        strategy="lazyOnload"
+        src="https://www.googletagmanager.com/gtag/js?id=G-BD8X7BE9RV"
+      />
+
+      <Script strategy="lazyOnload" id="analytics">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-BD8X7BE9RV');
+        `}
+      </Script>
+
+      <MDXProvider components={components}>
+        <Component {...pageProps} />
+      </MDXProvider>
+    </>
   )
 }
 

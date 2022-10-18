@@ -3,7 +3,7 @@ import Article from '@components/Article'
 <Article
   title="Graph Theory"
   ctime="Oct. 11, 2022"
-  utime="Oct. 12, 2022"
+  utime="Oct. 16, 2022"
   subtitle="Notes for MATH 350: Discrete Mathematics."
 >
 
@@ -40,9 +40,27 @@ not exist an $M$-augmenting path in $G$.
 for every $v \in G$.  Then, there exists a **perfect matching** of $G$. (A matching is perfect if every
 vertex of $G$ is incident to an edge in $M$.)
 
-**Theorem 7.5:** Let $G$ be a bipartite graph with bipartition ($A, B$).
+**Theorem 7.5** (Hall): Let $G$ be a bipartite graph with bipartition ($A, B$).
 Let $N(S)$ denote the set of vertices that are adjacent to at least one vertex in the set $S$.
 Then $G$ has a matching $M$ covering $A$ (every vertex of $A$ is incident to an edge of $M$) if
 and only if $N(S) \geq S$ for every $S \subset A$.
+
+# 8. Menger's Theorems and Separation
+
+**Corollary 8.3:** $G$ is a $k$-connected graph **if and only if**
+for all $s,t \in V(G)$, there exist $k$ pairwise disjoint paths except for their ends.
+
+# Problem Solving
+
+**Hamiltonian cycles & perfect matchings:**
+
+An even cycle has a perfect matching.
+Thus, a Hamiltonian cycle with even $V(G)$ has a perfect matching.
+
+**Matchings & edges:**
+
+If the graph is bipartite, $\nu(G) = \tau(G)$. Then, the minimum vertex cover $X$ should have
+$\sum_{v \in X}$ deg$(v) \geq |E(G)|$. Thus if you know $|E(G)|$ and the constraints of
+vertex degrees, you can get a lower bound for $\tau(G)$.
 
 </Article>
