@@ -53,4 +53,59 @@ $\forall^{\infty}n = \exists N\,\, \forall n \geq N$ = "eventually" for all $n$,
 
 $\exists^{\infty}n = \forall N\,\, \exists n \geq N$ = for infinitely many $n$.
 
+# Post-Midterm 1 Material
+
+All convergent sequences are bounded, i.e., **if a sequence is unbounded, then it is divergent.**
+
+Let $(x_n)$ and $(y_n)$ be convergent sequences with $\lim x_n = x$, $\lim y_n = y$. Then,
+- $x_n \pm y_n \rightarrow x \pm y$
+- $x_n \times y_n \rightarrow x \times y$
+- If $y \neq 0$, then $x_n / y_n \rightarrow x / y$.
+
+**Squeeze Theorem:** If $\lim x_n = \lim z_n = l$, and $x_n \leq y_n \leq z_n$ for all $n$, then
+$\lim y_n = l$.
+
+**Ratio Test:** Let $L := \lim \frac{x_{n + 1}}{x_n}$, then
+- If $L < 1$, then $\lim x_n = 0$.
+- If $L > 1$, then the series diverges.
+- If $L = 1$, then no conclusion.
+
+Monotone sequences.
+
+**Monotone Convergence Theorem:** If a monotone sequence is bounded, then
+- If it is increasing, then $\lim x_n = \text{sup}\, x_n$.
+- If it is decreasing, then $\lim x_n = \text{inf}\, x_n$.
+
+## 3.4 Subsequences and the Bolzano-Weierstrass Theorem
+
+**Monotone Subsequence Theorem:** In every sequence of real numbers, there is a
+monotone subsequence.
+
+If $(x_n)$ converges to $x$, then all subsequences of $(x_n)$ also converge to $x$.
+*The converse is important.*
+
+**Bolzano-Weierstrass Theorem:** A bounded sequence has a convergent subsequence.
+$$
+\lim \text{sup}\, x_n = \lim \text{sup}\, \{x_n, x_{n+1},...\},\,\,
+\lim \text{inf}\, x_n = \lim \text{inf}\, \{x_n, x_{n+1},...\}
+$$
+
+$\lim \text{sup}\, x_n$ is the infimum of the set of all numbers $v$ for which
+there is only a finite number of $x_n$'s such that $v < x_n$.
+
+A bounded sequence is convergent $\iff$ $\lim \text{sup}\, x_n = \lim \text{inf}\, x_n$.
+
+## 3.5 The Cauchy Criterion
+
+A sequence $(x_n)$ is Cauchy if for every $\epsilon > 0$, eventually, for all $m,n \geq N$, $|x_m - x_n| < \epsilon$.
+
+A sequence is convergent $\iff$ it is Cauchy.
+
+A sequence is **contractive** if there exists some constant $0 < C < 1$ such that
+$$
+  |x_{n + 2} - x_{n + 1}| \leq C |x_{n + 1} - x_n|.
+$$
+
+Every contractive sequence is a Cauchy sequence, and thus it is convergent.
+
 </Article>

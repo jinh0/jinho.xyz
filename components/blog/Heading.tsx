@@ -8,7 +8,7 @@ const H1: React.FC<{ children?: any }> = ({ children }) => {
 
 const H2: React.FC<{ children?: any }> = ({ children }) => {
   return (
-    <p className="font-bold text-2xl first:mt-0 mt-4 mb-4 text-polar1">
+    <p className="font-bold text-2xl first:mt-0 mt-8 mb-4 text-polar1">
       {children}
     </p>
   )

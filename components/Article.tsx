@@ -27,7 +27,7 @@ const Article = ({
         ></link>
       </Head>
       <div className="items-center flex flex-col md:w-screen md:min-h-screen p-6 md:pt-16 md:p-20 md:text-lg transition-all leading-relaxed select-none">
-        <div className="w-full lg:w-1/2 select-text">
+        <div className="w-full lg:w-3/5 select-text">
           <GoBack />
           <Title>{title}</Title>
 
